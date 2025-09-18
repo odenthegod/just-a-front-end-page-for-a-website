@@ -1,0 +1,215 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url("hero-tech.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-attachment: fixed;
+  animation: fadeIn 2s ease;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero-content p {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-btn {
+  padding: 12px 25px;
+  border: 2px solid #00bcd4;
+  border-radius: 30px;
+  background: transparent;
+  color: #00bcd4;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #00bcd4;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 188, 212, 0.6);
+  transform: scale(1.08);
+}
+
+/* Sideway Sections */
+.sideway {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  padding: 50px;
+}
+
+.side-text {
+  max-width: 600px;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  opacity: 0;
+  transform: translateX(120px);
+  transition: all 1.2s ease;
+}
+
+.side-text h2 {
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+/* Left Slide */
+.side-text.left {
+  transform: translateX(-120px);
+}
+
+/* Appear on scroll */
+.side-text.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Tracking Section */
+.tracking {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 700px;
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
+  padding: 60px 30px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.tracking input {
+  margin: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.track-btn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.track-btn:hover {
+  background: #e64a19;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.5);
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* News Section */
+.news {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(135deg, #fafafa, #e8f5e9);
+}
+
+.news h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.news-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.news img {
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.news img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  margin: 15px 0;
+}
+
+footer ul li a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #ff5722;
+}
+
+.copy {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(1.05);}
+  to { opacity: 1; transform: scale(1);}
+}
